@@ -51,7 +51,7 @@ $result=$conn->query($sql);
                 while($row=$result->fetch_assoc()){
                     echo "<tr><td>".$row["id"]."</td><td>".$row["name"]."</td><td>".$row["email"]."</td><td>".$row["password"]."</td></tr>";
                 }
-                echo"</tableY";
+                echo"</table>";
             }
             else{
                 echo"0 result";
