@@ -1,0 +1,96 @@
+body {
+    background-image: url('../images/Backgrounds.png');
+    background-size: cover;
+    background-position: center;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    width: 300px;
+    padding: 16px;
+    background-color: white;
+    margin: 0 auto;
+    margin-top: 100px;
+    box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.3);
+    border-color: #00d0f5;
+    outline: none;
+    box-shadow: 0 0 10px rgba(0, 254, 254, 0.3);
+}
+
+h1 {
+    text-align: center;
+    color: #444;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+input {
+    margin-bottom: 10px;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+a{text-decoration: none;}
+
+button,a {
+    margin-top: 10px;
+    padding: 8px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+button:hover,a:hover {
+    background-color: #0056b3;
+}
+label {
+    display: block;
+    margin-top: 10px;
+    transition: transform 0.3s ease;
+}
+
+label:hover {
+    transform: translateY(-5px);
+}
+input[type="text"], input[type="email"], input[type="password"], input[type="tel"] {
+    display: block;
+    width: 100%;
+    padding: 8px;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+input[type="text"]:focus, input[type="email"]:focus, input[type="password"]:focus, input[type="tel"]:focus {
+    border-color: #6699cc;
+    outline: none;
+    box-shadow: 0 0 10px rgba(102, 153, 204, 0.3);
+}
+
+@media screen and (max-width: 480px) {
+.container {
+    width: 100%;
+    padding: 20px;
+    margin-top: 50px;
+}
+
+h1 {
+    font-size: 24px;
+}
+
+input {
+    padding: 10px;
+}
+
+button {
+    padding: 10px;
+}
+}
