@@ -1,0 +1,29 @@
+
+            .map-contact-container {
+            display: flex;
+            justify-content: space-between;
+            
+        }
+        .contact-details {
+            width: 30%;
+            margin-top: 20px;
+        }
+            /* Set the container size for the map */
+            .map-container {
+                overflow: hidden;
+                position: relative;
+                width: 78%;
+                margin-left: 3cm;
+                padding-top: 56.25%; 
+            }
+    
+            /* Set the iframe to fill the container */
+            .map-container iframe {
+                border: 0;
+                height: 100%;
+                left: 0;
+                position: absolute;
+                top: 0;
+                width: 100%;
+            }
+        

@@ -1,0 +1,171 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background: radial-gradient(circle,#D6D6F4,lightblue,#13EAC9); 
+  /* You can adjust the colors and direction according to your preferences */
+}
+
+.sidebar {
+    position: fixed;
+    width: 200px;
+    height: 100%;
+    background: linear-gradient(to bottom, #D6D6F4, #acb6e8);
+    padding: 20px;
+    box-sizing: border-box;
+    transition: background 0.5s ease-in-out,transform 0.5s ease-in-out;
+    will-change: transform;
+  }
+  
+  /* Add a hover effect to trigger the transition */
+  .sidebar:hover {
+    background: linear-gradient(to bottom, #85E1E1, #66A6D2);
+    transform: translateZ(0);
+  }
+
+.sidebar h2 {
+    margin: 0;
+    padding: 0;
+    font-size: 24px;
+}
+.sidebar ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+.sidebar li {
+    padding: 10px 0;
+    margin-bottom: 7px;
+    border-bottom: 1px solid #eee;
+    cursor: pointer;
+}
+.sidebar li:hover {
+    background-color: white;
+    border-radius: 2rem;
+}
+.sidebar li a {
+    color: #333;
+    text-decoration: none;
+}
+.sidebar li a:hover {
+    color: #007bff;
+}
+.sidebar li i {
+    margin-right: 10px;
+}
+
+.sidebar-toggle {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 24px;
+    cursor: pointer;
+}
+.sidebar-toggle:hover {
+    color: #007bff;
+}
+
+.main-content {
+    margin-left: 200px;
+    transition: margin-left 1s; /* Add smooth transition to the main content */
+    padding: 16px; 
+}
+
+button{
+    margin-top: 10px;
+    padding: 8px;
+    background-color:blue;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+button:hover {
+    background-color: #b2b2ec;
+}
+
+table {
+    margin-top: 3%;
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0 5x; 
+    background-color: rgba(255, 255, 255, 1); 
+    color: #000;
+  }
+  
+ th, td {
+    border: 3px solid #D6D6F4;
+    padding: 10px;
+    text-align: left;
+    background-color: #f6f6f8; 
+  }
+  
+th {
+    
+    background-color: #13EAC9; 
+    color: white;
+  }
+  
+ tr:nth-child(even) {
+    background-color: #f2f2f2; 
+  }
+  
+ tr:hover {
+    background-color: #ddd; 
+  }
+
+.card {
+    border: 2px solid #0dfce8;
+    border-radius: 2rem;
+    transition: border-color 0.8s ease-in-out; /* Smooth transition for border color change */
+}
+
+.card:hover {
+    border-color: #007bff; /* Change border color on hover */
+}
+
+label {
+    display: block;
+    margin-top: 10px;
+    transition: transform 0.3s ease;
+    color: #065f96;
+    font-weight: bold;
+}
+
+label:hover {
+    transform: translateY(-5px);
+}
+
+input[type="text"], input[type="tel"] {
+    display: block;
+    width: 100%;
+    padding: 8px;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    border: 2px solid #ccc;
+    border-radius: 5rem;
+    box-sizing: border-box;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+input[type="text"]:focus, input[type="tel"]:focus {
+    border-color: #6699cc;
+    outline: none;
+    box-shadow: 0 0 10px rgba(102, 153, 204, 0.3);
+}
+/* .sidebar {
+    position: fixed;
+    width: 200px;
+    height: 100%;
+    background-color:  #D6D6F4;
+    padding: 20px;
+    box-sizing: border-box;
+} */
+
+/*body{ background-image: url('../images/Background4.png'); 
+    background-size: cover; 
+    background-repeat: repeat; 
+    background-position: center center;
+    height: 100%;
+    width: 100%; }*/
